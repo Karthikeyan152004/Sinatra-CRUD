@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteMappingsManager">
+    <list>
+      <list>
+        <remote-mappings server-id="ruby@sshConfig://ubuntu@remote-dev-lZXZ9f-1-virginia-b.aws.goshd.net:23 key/home/ubuntu/.rvm/rubies/jruby-9.2.8.0/bin/jruby">
+          <settings>
+            <list>
+              <mapping local-root="$USER_HOME$/goshposh/server" remote-root="/goshposh/server" />
+            </list>
+          </settings>
+        </remote-mappings>
+      </list>
+    </list>
+  </component>
+</project>

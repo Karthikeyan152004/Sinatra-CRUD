@@ -1,0 +1,51 @@
+class Product
+  # this command makes this object of this class as separate document
+  include Mongoid::Document
+
+  # this command creates extra created_at and updated_at timestamps automatically
+  include Mongoid::Timestamps
+
+  # this defines what field we need and its data types
+  field :name, type: String
+  field :price, type: Integer
+  field :is_available, type: Mongoid::Boolean, default: true
+
+  # this defines validations before storing this field into db
+  validates :name, presence: true
+  validates :price, presence: true, numericality: { greater_than: 0 }
+  validates :is_available, inclusion: { in: [true, false] } , presence: true
+
+  def self.get_all
+    # res = Product.all
+    # puts res
+
+    Product.all
+  end
+
+  def self.get_one(id)
+    Product.find(id)
+  end
+
+  def self.add(product)
+    Product.create(product)
+  end
+
+
+  def self.delete(id)
+    Product.find(id).destroy
+
+  end
+
+  def self.update(id, product)
+    Product.find(id).update(product)
+  end
+
+  def to_h
+    {
+      id: id.to_s,
+      name: name,
+      price: price,
+      is_available: is_available
+    }
+  end
+end
