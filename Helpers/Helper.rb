@@ -1,7 +1,7 @@
 require 'json'
 
 module Json_body_parser
-  REQUIRED_FIELDS = %w[name price].freeze
+  REQUIRED_FIELDS = %w[name price is_available].freeze
   def json_body
     request.body.rewind
     JSON.parse(request.body.read)

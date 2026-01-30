@@ -9,16 +9,16 @@ class Product
   field :name, type: String
   field :price, type: Integer
   field :is_available, type: Mongoid::Boolean, default: true
+  field :description, type: String
 
   # this defines validations before storing this field into db
   validates :name, presence: true
   validates :price, presence: true, numericality: { greater_than: 0 }
   validates :is_available, inclusion: { in: [true, false] } , presence: true
 
-  def self.get_all
-    # res = Product.all
-    # puts res
+  index({name:1})
 
+  def self.get_all
     Product.all
   end
 
@@ -27,7 +27,7 @@ class Product
   end
 
   def self.add(product)
-    Product.create(product)
+    Product.create!(product)
   end
 
 

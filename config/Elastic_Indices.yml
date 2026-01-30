@@ -1,0 +1,30 @@
+development:
+  products_index:
+    alias: products
+    version: 1
+    shards: 1
+    mappings:
+      properties:
+        name:
+          type: text
+        price:
+          type: integer
+        description:
+          type: text
+        is_available:
+          type: boolean
+
+
+# this is just example index, for learning purpose
+  users_index:
+    alias: users
+    version: 1
+    shards: 1
+    mappings:
+      properties:
+        username:
+          type: text
+        email:
+          type: text
+        active:
+          type: boolean

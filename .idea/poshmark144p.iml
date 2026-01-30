@@ -9,7 +9,42 @@
       <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/test" isTestSource="true" />
     </content>
-    <orderEntry type="jdk" jdkName="Remote-rvm: jruby-2.5.3-p0" jdkType="JRUBY_SDK" />
+    <orderEntry type="jdk" jdkName="rbenv: 3.4.6" jdkType="RUBY_SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="activemodel (v8.1.2, rbenv: 3.4.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="activesupport (v8.1.2, rbenv: 3.4.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="base64 (v0.3.0, rbenv: 3.4.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bigdecimal (v4.0.1, rbenv: 3.4.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bson (v5.2.0, rbenv: 3.4.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bundler (v2.6.9, rbenv: 3.4.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="concurrent-ruby (v1.3.6, rbenv: 3.4.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="connection_pool (v3.0.2, rbenv: 3.4.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="drb (v2.2.3, rbenv: 3.4.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="elastic-transport (v8.4.1, rbenv: 3.4.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="elasticsearch (v9.2.0, rbenv: 3.4.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="elasticsearch-api (v9.2.0, rbenv: 3.4.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="faraday (v2.14.0, rbenv: 3.4.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="faraday-net_http (v3.4.2, rbenv: 3.4.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="i18n (v1.14.8, rbenv: 3.4.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="json (v2.18.0, rbenv: 3.4.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="logger (v1.7.0, rbenv: 3.4.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="minitest (v6.0.1, rbenv: 3.4.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="mongo (v2.22.0, rbenv: 3.4.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="mongoid (v9.0.9, rbenv: 3.4.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.19.1, rbenv: 3.4.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="mustermann (v3.0.4, rbenv: 3.4.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="net-http (v0.9.1, rbenv: 3.4.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="prism (v1.7.0, rbenv: 3.4.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rack (v3.2.4, rbenv: 3.4.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rack-protection (v4.2.1, rbenv: 3.4.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rack-session (v2.1.1, rbenv: 3.4.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="ruby2_keywords (v0.0.5, rbenv: 3.4.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="securerandom (v0.4.1, rbenv: 3.4.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sinatra (v4.2.1, rbenv: 3.4.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sinatra-contrib (v4.2.1, rbenv: 3.4.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="tilt (v2.7.0, rbenv: 3.4.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="tzinfo (v2.0.6, rbenv: 3.4.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="uri (v1.1.1, rbenv: 3.4.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="yaml (v0.4.0, rbenv: 3.4.6) [gem]" level="application" />
   </component>
 </module>

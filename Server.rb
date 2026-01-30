@@ -1,6 +1,14 @@
 require 'sinatra'
 require 'mongoid'
+require 'mongo'
 require_relative './Controller/ProductController'
+require_relative './config/logger'
+
+# this line tells ruby to load this elastic-search-client file where we created Elasticsearch client
+require_relative './config/elastic-search-client'
+require_relative './Service/IndexManager'
+
+IndexManager.setup!
 
 
 use Controller
@@ -8,9 +16,11 @@ use Controller
 Mongoid.load!("config/mongoid.yml", :development)
 
 # this line tells
-# puts Mongoid::Clients.default.database.command("databaseconnected")
+# puts Mongoid::Clients.default.database.command("database connected")
 
 
 get '/' do
   "Welcome to Poshmark144p"
 end
+
+Mongoid::Tasks::Database.create_indexes
