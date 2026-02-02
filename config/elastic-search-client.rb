@@ -7,7 +7,6 @@ ELASTIC_CLIENT = Elasticsearch::Client.new(
   user: 'elastic',
   password: '4tsRFE9EGrx_j1-gUS1S',
   transport_options: {
-
     ssl: {verify: false}
   },
   log: true
