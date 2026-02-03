@@ -36,14 +36,13 @@ class Controller < Sinatra::Base
   # by the end points itself we could determine that data from this body goes to products index
   post '/product' do
     product = json_body # reading the json body and changes it into a ruby object or hash
-    serialize(json_body)
+    serialize(product)
     saved_product = @service.add_product(product)
     saved_product.as_json.to_json
-
-    rescue Mongoid::Errors::Validations => e
+  rescue Mongoid::Errors::Validations => e
       status 400
       { error: e.message }.to_json
-    rescue => e
+  rescue => e
       if e.message.include?("E11000")
         status 409
         { error: "Duplicate product" }.to_json
@@ -53,9 +52,12 @@ class Controller < Sinatra::Base
   end
 
   # update the existing product
-  patch '/product/:id' do
+  put '/product/:id' do
+    # puts "request body: #{request.body.read}"
     id = params["id"]
     updates = json_body
+
+    puts "updatessss => #{updates}"
 
     updated_product = @service.update_product(id , updates)
     halt 404, {error:"no product with such id"}.to_json unless updated_product
@@ -70,6 +72,10 @@ class Controller < Sinatra::Base
     else
       halt 404 , {error:"Invalid Id or Id not found"}.to_json
     end
+  end
+
+  delete '/products' do
+    @service.delete_all
   end
 
 end

@@ -6,3 +6,10 @@ gem 'mongoid'
 gem 'sinatra-contrib'
 gem 'elasticsearch'
 gem 'yaml'
+
+# cucumber testing
+
+gem 'cucumber'
+gem 'capybara'
+gem 'rspec-expectations'
+gem 'rack-test'

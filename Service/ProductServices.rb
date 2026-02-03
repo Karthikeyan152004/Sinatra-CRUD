@@ -39,7 +39,7 @@ class Services
   end
 
   def update_product(id , updates)
-    product = Product.get(id)
+    product = Product.get_one(id)
     return nil unless product
 
     Product.update(id , updates)
@@ -54,5 +54,10 @@ class Services
 
   def search(query)
     @es_products.es_search_product(query)
+  end
+
+  def delete_all
+    Product.delete_all
+    {message: "deleted successfully"}.to_json
   end
 end

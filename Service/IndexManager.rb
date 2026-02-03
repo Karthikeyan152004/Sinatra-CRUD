@@ -11,7 +11,7 @@ class IndexManager
     INDICES.each_value do |index_conf|
 
       IndexManager.create_index_if_not_exists(index_conf)
-      puts index_conf
+
     end
   end
 

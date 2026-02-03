@@ -37,7 +37,9 @@ class Product
   end
 
   def self.update(id, product)
-    Product.find(id).update(product)
+    updated_product = Product.find(id)
+    updated_product.update!(product)
+    updated_product
   end
 
   def to_h
