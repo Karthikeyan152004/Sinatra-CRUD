@@ -7,9 +7,11 @@ gem 'sinatra-contrib'
 gem 'elasticsearch'
 gem 'yaml'
 
-# cucumber testing
+# cucumber and RSpec testing
 
 gem 'cucumber'
 gem 'capybara'
-gem 'rspec-expectations'
+gem 'rspec'
 gem 'rack-test'
+gem 'rspec-expectations'
+
