@@ -15,3 +15,5 @@ gem 'rspec'
 gem 'rack-test'
 gem 'rspec-expectations'
 
+gem 'rake'
+
